@@ -41,7 +41,7 @@ func (this *HttpClient) SetTimeout(t time.Duration) *HttpClient {
 	return this
 }
 
-func (this *HttpClient) SetCookieJar(j *CookieJar) *HttpClient {
+func (this *HttpClient) SetCookieJar(j *http.CookieJar) *HttpClient {
 	this.client.Jar=j
 	return this
 }
